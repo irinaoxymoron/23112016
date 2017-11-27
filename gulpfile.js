@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     cleanCSS = require('gulp-clean-css'),
     gulpif = require('gulp-if'),
-    concat = require('plumber-concat'),
+    concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     plumber = require('gulp-plumber'),
     autoprefixer = require('autoprefixer'),
@@ -37,7 +37,7 @@ gulp.task('moveJs', function () {
         app_dir + '/js/main.js'
     ])
         //.pipe(plumber({ errorHandler: onError }))
-        //.pipe(concat('script.min.js'))
+        .pipe(concat('script.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(wp_dir + '/js'));
 });
