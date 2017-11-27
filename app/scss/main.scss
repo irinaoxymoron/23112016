@@ -1,6 +1,8 @@
 body {
-  margin: 0;
-  padding: 0;
+  width: 50%;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 0 auto;
   font-family: Arial, sans-serif;
 }
 
@@ -15,10 +17,7 @@ p {
 }
 
 .container {
-  width: 1000px;
-  margin: 0 auto;
   background: #fcfcfc;
-  padding: 30px;
 }
 
 .form {
