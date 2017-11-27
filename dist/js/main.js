@@ -1,0 +1,1 @@
+function createParagraph(){var t=document.createElement("p");t.textContent="You clicked the button",document.body.appendChild(t)}for(var buttons=document.querySelectorAll("button"),i=0;i<buttons.length;i++)buttons[i].addEventListener("click",createParagraph);
