@@ -16,6 +16,24 @@ p {
   font-size: 20px;
 }
 
+button,
+.guessSubmit {
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  background: #45438e;
+}
+
+.guessField {
+  padding: 8px 20px;
+  border: 2px solid #45438e;
+  border-radius: 5px;
+  outline: none;
+}
+
 .container {
   background: #fcfcfc;
 }
