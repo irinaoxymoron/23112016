@@ -36,7 +36,7 @@ gulp.task('moveJs', function () {
     return gulp.src([
         app_dir + '/js/main.js'
     ])
-        //.pipe(plumber({ errorHandler: onError }))
+        .pipe(plumber({ errorHandler: onError }))
         .pipe(concat('script.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(wp_dir + '/js'));
@@ -61,3 +61,10 @@ gulp.task('rebase', gulp.series(
 ));
 
 gulp.task('default', gulp.series('rebase', gulp.parallel('browser-sync', 'watch')));
+
+var onError = function(err) {
+    notify.onError({
+        title: "Error in " + err.plugin
+    })(err);
+    this.emit('end');
+};
