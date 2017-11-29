@@ -93,3 +93,47 @@ function resetGame() {
 
     randomNumber = Math.floor(Math.random() * 100) + 1;
 }
+
+var admin, name;
+name = 'Василий';
+admin = name;
+
+/*var ourPlanetName = 'Земля';
+var userName = 'Петя';
+
+var user = { name: "Вася"};
+var years = prompt('Сколько вам лет?', '');
+
+alert('Вам ' + years + ' лет!');
+
+var isAdmin = confirm("Вы - администратор?");
+
+alert( isAdmin );
+
+var userName = prompt('Как вас зовут?', '');
+alert( userName );*/
+
+/*var age = prompt('возраст?', 18);
+
+var message = (age < 3) ? 'Здравствуй, малыш!' :
+    (age < 18) ? 'Привет!' :
+        (age < 100) ? 'Здравствуйте!' :
+            'Какой необычный возраст!';
+
+alert( message );*/
+
+/*var nameLanguage = prompt('Каково "официальное" название javascript?', '');
+if (nameLanguage == 'EcmaScript') {
+    alert( 'Верно!' );
+} else {
+    alert( 'Не знаете? "EcmaScript"!' );
+}*/
+
+var number = prompt('Введите число', '');
+if (number > 0) {
+    alert(1);
+} else if  (number < 0) {
+    alert(-1);
+} else {
+    alert(0);
+}

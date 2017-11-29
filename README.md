@@ -1,6 +1,6 @@
 # Base JS, MDN
 
-## developer.mozilla.org
+## developer.mozilla.org, learn.javascript.ru
 
 ## Getting started:
 
