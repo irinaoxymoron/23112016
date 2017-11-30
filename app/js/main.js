@@ -94,3 +94,35 @@ function resetGame() {
     randomNumber = Math.floor(Math.random() * 100) + 1;
 }
 
+// Логические операторы
+
+/* В логическом контексте:
+Число 0 (-0), пустая строка "", null и undefined, а также NaN являются false,
+Остальные значения – true, включая отрицательные числа, к примеру такие как -1.*/
+
+console.log("" + 1 + 0); // строка "10";
+console.log("" - 1 + 0); // мат.выражение, численное преобразование -1;
+console.log(true + false); // 1, преобразуются к числам;
+console.log(6 / "3"); // 2, преобразуются к числам;
+console.log("2" * "3"); // 6;
+console.log(4 + 5 + "px"); // 9px, посчитает и к строке; !!!
+console.log("$" + 4 + 5); // $45, строка;
+
+console.log("4" - 2); // 2;
+console.log("4px" - 2); // NaN;
+
+console.log(7 / 0); // Infinity; !!!
+
+console.log("  -9\n" + 5); // -9 переход на новую строку 5;
+console.log("  -9\n" - 5); // -14 численное преобразование;
+console.log(5 && 2); // 2; !!!
+
+console.log(2 && 5); // 5;
+
+console.log(5 || 0); // 5;
+
+console.log(0 || 5); // 5;
+console.log(null + 1); // null = 0 + 1 = 1; !!!
+console.log(undefined + 1); // undefined преобразуется в NaN;
+console.log(null == "\n0\n"); // false; При сравнении == с null преобразования не происходит, есть жёсткое правило: null == undefined и только.
+console.log(+null == +"\n0\n"); // null = 0, true; И левая и правая часть == преобразуются к числу 0.
