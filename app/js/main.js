@@ -124,5 +124,6 @@ console.log(5 || 0); // 5;
 console.log(0 || 5); // 5;
 console.log(null + 1); // null = 0 + 1 = 1; !!!
 console.log(undefined + 1); // undefined преобразуется в NaN;
-console.log(null == "\n0\n"); // false; При сравнении == с null преобразования не происходит, есть жёсткое правило: null == undefined и только.
-console.log(+null == +"\n0\n"); // null = 0, true; И левая и правая часть == преобразуются к числу 0.
+console.log(null == "\n0\n"); // false, при сравнении == с null преобразования не происходит, есть жёсткое правило: null == undefined и только;
+console.log(+null == +"\n0\n"); // null = 0, true, и левая и правая часть == преобразуются к числу 0.
+
