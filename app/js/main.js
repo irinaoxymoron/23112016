@@ -127,3 +127,12 @@ console.log(undefined + 1); // undefined преобразуется в NaN;
 console.log(null == "\n0\n"); // false, при сравнении == с null преобразования не происходит, есть жёсткое правило: null == undefined и только;
 console.log(+null == +"\n0\n"); // null = 0, true, и левая и правая часть == преобразуются к числу 0.
 
+// functions
+
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('Родители разрешили?');
+  }
+}
