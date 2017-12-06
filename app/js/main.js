@@ -129,10 +129,11 @@ console.log(+null == +"\n0\n"); // null = 0, true, и левая и правая
 
 // functions
 
-function checkAge(age) {
-  if (age > 18) {
-    return true;
-  } else {
-    return confirm('Родители разрешили?');
-  }
+function min(a, b) {
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
 }
+alert(min(3,5));
