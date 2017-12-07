@@ -129,11 +129,22 @@ console.log(+null == +"\n0\n"); // null = 0, true, и левая и правая
 
 // functions
 
-function min(a, b) {
-    if (a < b) {
-        return a;
-    } else {
-        return b;
+function pow(x,n) {
+    var result = x;
+
+    for (var i = 1; i < n; i++) {
+        result *= x;
     }
+    return result;
 }
-alert(min(3,5));
+
+var x = prompt("x?", '');
+var n = prompt("n?", '');
+
+if (n <= 1) {
+    alert('Степень ' + n +
+        'не поддерживается, введите целую степень, больше 1'
+    );
+} else {
+    alert(pow(x, n));
+}
